@@ -1,0 +1,108 @@
+:root {
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%) ;   
+    --facebook-color: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+    --Toggle-gradient: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --Toggle: hsl(230, 22%, 74%);
+    --Very-Dark-Blue-bg : hsl(230, 17%, 14%);
+    --Very-Dark-Blue-Top-bg-Pattern: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+    --Desaturated-blue: hsl(228, 34%, 66%);
+    --White-text: hsl(0, 0%, 100%);
+    --White-bg: hsl(0, 0%, 100%);
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue: hsl(227, 47%, 96%);
+    --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+    --Very-Dark-Blue: hsl(230, 17%, 14%);
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 40px 20px 70px 20px;
+    background: var(--Very-Pale-Blue);
+}
+
+section {
+    padding: 30px 20px;
+}
+
+/* .social-media-acc {
+    position: relative;
+}
+
+.social-media-acc-div {
+    position: absolute;
+    top: -40px;
+} */
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.flex {
+    display: flex;
+}
+
+.account-div {
+    text-align: center;
+    padding: 20px 50px;
+    background: var(--Light-Grayish-Blue);
+}
+
+.account-div .flex {
+    justify-self: center;
+}
+
+.facebook {
+    border-top: 4px solid var(--facebook-color);
+}
+
+.up-text {
+    color: var(--lime-green);
+}
+
+.down-text {
+    color: var(--bright-red);
+}
+
+.overview .flex {
+    justify-content: space-between;
+}
+
+.overview-contain {
+    padding: 20px;
+    background: var(--Light-Grayish-Blue);
+}
+
+@media only screen and (min-width: 500px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
