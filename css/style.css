@@ -164,12 +164,12 @@ button {
 }
 
 .up-text {
-    color: var(--lime-green);
+    color: var(--lime-green) !important;
     font-size: 10px;
 }
 
 .down-text {
-    color: var(--bright-red);
+    color: var(--bright-red) !important;
     font-size: 10px;
 }
 
