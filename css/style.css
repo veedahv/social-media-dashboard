@@ -30,11 +30,26 @@ body {
     padding: 25px;
     background-color: white;
     font-size: 25px;
-  }
+}
   
-  .dark-mode {
+.dark-mode {
     background-color: var(--Very-Dark-Blue-bg);
-  }
+}
+  
+.dark-mode h1,
+.dark-mode h2 {
+   color: var(--Very-Pale-Blue);
+}
+
+.dark-mode p {
+    color: var(--Desaturated-blue);
+}
+
+.dark-mode nav,
+.dark-mode .account-div,
+.dark-mode .overview-contain {
+    background: var(--Dark-Desaturated-Blue);
+}
 
 nav {
     background: var(--Very-Pale-Blue);
@@ -61,9 +76,12 @@ h2 {
     position: relative;
 }
 
+button {
+    position: relative;
+}
+
 .switch-contain {
     position: absolute;
-    top: 50px;
     background-color: black;
 }
 
