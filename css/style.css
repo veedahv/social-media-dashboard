@@ -26,6 +26,16 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 25px;
+    background-color: white;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: var(--Very-Dark-Blue-bg);
+  }
+
 nav {
     background: var(--Very-Pale-Blue);
     position: relative;
@@ -51,7 +61,35 @@ h2 {
     position: relative;
 }
 
-.social-media-acc {
+.switch-contain {
+    position: absolute;
+    top: 50px;
+    background-color: black;
+}
+
+.switch {
+    width: 18px;
+    height: 9px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px;
+    transition: all 300ms ease-in-out;
+}
+
+.switch.active {
+    background-color: blue;
+}
+
+.switch.active .switch-btn {
+    margin-left: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+.switch-btn {
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 .nav-relative {
