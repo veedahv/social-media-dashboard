@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Social Media Dashboard</title>
 </head>
@@ -18,13 +19,13 @@
                     <p>Total Followers: 23,004</p>
                 </div>
                 <hr>
-                <div class="flex">
+                <div class="flex dark-mode-switch">
                     <p>Dark Mode</p>
                     <button onclick="myFunction()">
                         <div class="switch-contain">
-                        <div class="switch" onclick="this.classList.toggle('active')">
-                            <div class="switch-btn"></div>
-                        </div>
+                            <div class="switch" onclick="this.classList.toggle('active')">
+                                <div class="switch-btn"></div>
+                            </div>
                     </button>
                 </div>
             </div>
@@ -36,49 +37,49 @@
             <div class="grid social-media-acc-div">
                 <div class="account-div facebook card">
                     <div class="flex mb-12">
-                        <div class="mr-6"><img src="images/icon-facebook.svg" alt=""></div>
-                        <p>@nathanf</p>
+                        <div class="mr-6 flex"><img src="images/icon-facebook.svg" alt=""></div>
+                        <p class="user-name">@nathanf</p>
                     </div>
                     <h1>1987</h1>
                     <p class="mb-12">FOLLOWERS</p>
                     <div class="flex">
-                        <div class="mr-2"><img src="images/icon-up.svg" alt=""></div>
+                        <div class="mr-3 flex"><img src="images/icon-up.svg" alt=""></div>
                         <p class="up-text">12 Today</p>
                     </div>
                 </div>
                 <div class="account-div twitter card">
                     <div class="flex mb-12">
-                        <div class="mr-6"><img src="images/icon-twitter.svg" alt=""></div>
-                        <p>@nathanf</p>
+                        <div class="mr-6 flex"><img src="images/icon-twitter.svg" alt=""></div>
+                        <p class="user-name">@nathanf</p>
                     </div>
                     <h1>1044</h1>
                     <p class="mb-12">FOLLOWERS</p>
                     <div class="flex">
-                        <div class="mr-2"><img src="images/icon-up.svg" alt=""></div>
+                        <div class="mr-3 flex"><img src="images/icon-up.svg" alt=""></div>
                         <p class="up-text">99 Today</p>
                     </div>
                 </div>
                 <div class="account-div instagram card">
                     <div class="flex mb-12">
-                        <div class="mr-6"><img src="images/icon-instagram.svg" alt=""></div>
-                        <p>@realnathanf</p>
+                        <div class="mr-6 flex"><img src="images/icon-instagram.svg" alt=""></div>
+                        <p class="user-name">@realnathanf</p>
                     </div>
                     <h1>11k</h1>
                     <p class="mb-12">FOLLOWERS</p>
                     <div class="flex">
-                        <div class="mr-2"><img src="images/icon-up.svg" alt=""></div>
+                        <div class="mr-3 flex"><img src="images/icon-up.svg" alt=""></div>
                         <p class="up-text">1099 Today</p>
                     </div>
                 </div>
                 <div class="account-div youtube card">
                     <div class="flex mb-12">
-                        <div class="mr-6"><img src="images/icon-youtube.svg" alt=""></div>
-                        <p>Nathan F.</p>
+                        <div class="mr-6 flex"><img src="images/icon-youtube.svg" alt=""></div>
+                        <p class="user-name">Nathan F.</p>
                     </div>
                     <h1>8239</h1>
                     <p class="mb-12">FOLLOWERS</p>
                     <div class="flex">
-                        <div class="mr-2"><img src="images/icon-down.svg" alt=""></div>
+                        <div class="mr-3 flex"><img src="images/icon-down.svg" alt=""></div>
                         <p class="down-text">144 Today</p>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Page Views</p>
-                        <div><img src="images/icon-facebook.svg" alt="">
+                        <div class="flex"><img src="images/icon-facebook.svg" alt="">
                         </div>
                     </div>
                     <div class="flex">
@@ -100,7 +101,7 @@
                             87
                         </h2>
                         <div class="flex">
-                            <div>
+                            <div class="mr-3 flex">
                                 <img src="images/icon-up.svg" alt="">
                             </div>
                             <p class="up-text">3%</p>
@@ -110,7 +111,7 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Likes</p>
-                        <div>
+                        <div class="flex">
                             <img src="images/icon-facebook.svg" alt="">
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                             52
                         </h2>
                         <div class="flex">
-                            <div>
+                            <div class="mr-3 flex">
                                 <img src="images/icon-down.svg" alt="">
                             </div>
                             <p class="down-text">2%</p>
@@ -129,7 +130,8 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Likes</p>
-                        <div><img src="images/icon-instagram.svg" alt="">
+                        <div class="flex">
+                            <img src="images/icon-instagram.svg" alt="">
                         </div>
                     </div>
                     <div class="flex">
@@ -137,7 +139,8 @@
                             5462
                         </h2>
                         <div class="flex">
-                            <div><img src="images/icon-up.svg" alt="">
+                            <div class="mr-3 flex">
+                                <img src="images/icon-up.svg" alt="">
                             </div>
                             <p class="up-text">2257%</p>
                         </div>
@@ -146,7 +149,8 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Profile Views</p>
-                        <div><img src="images/icon-instagram.svg" alt="">
+                        <div class="flex">
+                            <img src="images/icon-instagram.svg" alt="">
                         </div>
                     </div>
                     <div class="flex">
@@ -154,7 +158,8 @@
                             52k
                         </h2>
                         <div class="flex">
-                            <div><img src="images/icon-up.svg" alt="">
+                            <div class="mr-3 flex">
+                                <img src="images/icon-up.svg" alt="">
                             </div>
                             <p class="up-text">1375%</p>
                         </div>
@@ -163,7 +168,7 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Retweets</p>
-                        <div>
+                        <div class="flex">
                             <img src="images/icon-twitter.svg" alt="">
                         </div>
                     </div>
@@ -172,7 +177,7 @@
                             117
                         </h2>
                         <div class="flex">
-                            <div>
+                            <div class="mr-3 flex">
                                 <img src="images/icon-up.svg" alt="">
                             </div>
                             <p class="up-text">303%</p>
@@ -182,7 +187,7 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Likes</p>
-                        <div>
+                        <div class="flex">
                             <img src="images/icon-twitter.svg" alt="">
                         </div>
                     </div>
@@ -191,7 +196,7 @@
                             507
                         </h2>
                         <div class="flex">
-                            <div>
+                            <div class="mr-3 flex">
                                 <img src="images/icon-up.svg" alt="">
                             </div>
                             <p class="up-text">553%</p>
@@ -201,7 +206,8 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Likes</p>
-                        <div><img src="images/icon-youtube.svg" alt="">
+                        <div class="flex">
+                            <img src="images/icon-youtube.svg" alt="">
                         </div>
                     </div>
                     <div class="flex">
@@ -209,7 +215,7 @@
                             107
                         </h2>
                         <div class="flex">
-                            <div>
+                            <div class="mr-3 flex">
                                 <img src="images/icon-down.svg" alt="">
                             </div>
                             <p class="down-text">19%</p>
@@ -219,7 +225,8 @@
                 <div class="overview-contain card">
                     <div class="flex mb-12">
                         <p>Total Views</p>
-                        <div><img src="images/icon-youtube.svg" alt="">
+                        <div class="flex">
+                            <img src="images/icon-youtube.svg" alt="">
                         </div>
                     </div>
                     <div class="flex">
@@ -227,7 +234,8 @@
                             1407
                         </h2>
                         <div class="flex">
-                            <div><img src="images/icon-down.svg" alt="">
+                            <div class="mr-3 flex">
+                                <img src="images/icon-down.svg" alt="">
                             </div>
                             <p class="down-text">12%</p>
                         </div>
