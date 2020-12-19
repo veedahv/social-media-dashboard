@@ -24,6 +24,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all .09s ease-in;
 }
 
 body {
@@ -44,10 +45,13 @@ body {
     color: var(--Desaturated-blue);
 }
 
+.dark-mode .card:hover {
+    filter: brightness(115%);
+}
+
 .dark-mode nav,
 .dark-mode .nav-relative,
-.dark-mode .account-div,
-.dark-mode .overview-contain {
+.dark-mode .card {
     background: var(--Dark-Desaturated-Blue);
 }
 
@@ -86,13 +90,17 @@ p {
     padding: 10px 20px;
 }
 
-button {
+.toggle-mode-btn {
     position: relative;
     width: 50px;
     border: none;
     outline: none;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.toggle-mode {
+    display: none;
 }
 
 .switch-contain {
@@ -105,23 +113,23 @@ button {
     height: 20px;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 20px;
-    padding: 1px;
+    padding: 2px;
     transition: all 300ms ease-in-out;
 }
 
 .switch.active {
-    /* background-color: transparent; */
     background-image: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .switch.active .switch-btn {
-    margin-left: 18.5px;
+    margin-left: 20px;
     transition: all 300ms ease-in-out;
+    background-color: var(--Very-Dark-Blue);
 }
 
 .switch-btn {
-    width: 18.5px;
-    height: 18.5px;
+    width: 16px;
+    height: 16px;
     background-color: var(--White-text);
     border-radius: 50%;
 }
@@ -137,7 +145,7 @@ button {
 }
 
 hr {
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .grid {
@@ -165,12 +173,17 @@ hr {
 
 .card {
     border-radius: 4px;
+    background: var(--Light-Grayish-Blue);
+}
+
+.card:hover {
+    cursor: pointer;
+    filter: brightness(95%);
 }
 
 .account-div {
     text-align: center;
     padding: 20px 50px;
-    background: var(--Light-Grayish-Blue);
 }
 
 .account-div .flex {
@@ -215,10 +228,10 @@ hr {
 
 .overview-contain {
     padding: 20px;
-    background: var(--Light-Grayish-Blue);
+    /* background: var(--Light-Grayish-Blue); */
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 576px) {
 
     .header-content {
         display: flex;

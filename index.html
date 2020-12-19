@@ -19,15 +19,19 @@
                     <p>Total Followers: 23,004</p>
                 </div>
                 <hr>
-                <div class="flex dark-mode-switch">
-                    <p>Dark Mode</p>
-                    <button onclick="myFunction()">
-                        <div class="switch-contain">
-                            <div class="switch" onclick="this.classList.toggle('active')">
-                                <div class="switch-btn"></div>
+                <label for="toggle-mode" class="toggle-mode-label">
+                    <div class="flex dark-mode-switch">
+                        <p>Dark Mode</p>
+                        <div class="toggle-mode-btn">
+                            <div class="switch-contain">
+                                <div class="switch">
+                                    <div class="switch-btn"></div>
+                                </div>
                             </div>
-                    </button>
-                </div>
+                        </div>
+                    </div>
+                </label>
+                <input type="checkbox" name="toggle-mode" id="toggle-mode" class="toggle-mode">
             </div>
         </div>
         <div class="nav-relative"></div>
